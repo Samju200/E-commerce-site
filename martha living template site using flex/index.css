@@ -264,6 +264,16 @@ textarea{
     width: 113px;
     background-color:rgb(255, 166, 95) ;
 }
+
+.error{
+    color: rgb(209, 21, 21);
+    display: block;
+}
+.error-message{
+    color: rgb(209, 21, 21);
+    font-size:15px;
+}
+
 /**********************************
   PAGE:LOGIN
   ***********************************/
