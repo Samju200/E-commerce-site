@@ -133,10 +133,6 @@ margin-right: 20px;
   border-radius: 7px;
 }
 
-section{
-  width: 100%;
-}
-
 .sub-header{
   background-color:white;
 display: flex;
@@ -200,15 +196,70 @@ border-top: 1px solid black;
   border-radius: 7px;
   margin-right: 20px;
 }
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /*Hide columns by default*/
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: flex;
+  /* clear: both; */
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display:flex;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
 /*footer */
 
-.footer{ 
+/* footer{ 
   width: 100%;
   background-color:rgba(248, 245, 245, 0.85);
   display: block;
-  position: relative;
+  /* position: relative; */
+  /* background:red; */
   
-}
+/* }  */
 .inner-footer{
   width: 90%;
   margin: auto;
@@ -217,6 +268,7 @@ border-top: 1px solid black;
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: center;
+  background:#ddd;
 }
 .footer-items{
   width: 15%;
@@ -337,9 +389,9 @@ border-top: 1px solid black;
   color: #3d3d3d;
   font-size: 12px;
   text-align: center;
-  bottom: 0;
-  left: 0;
-  position: absolute;
+  /* bottom: 0; */
+  /* left: 0; */
+  /* position: absolute; */
 } 
 
 
