@@ -11,7 +11,7 @@ body {
     line-height: 18px;
     font-family: oswald PT sans serif;
     background: #efefef;
-    background: linear-gradient(rgba(70, 67, 67, 0.6),rgba(0,0,0,0.6)), url(./xps-dpbXgTh0Lac-unsplash.jpg);
+    background: linear-gradient(rgba(70, 67, 67, 0.6),rgba(0,0,0,0.6)), url(./img/xps-dpbXgTh0Lac-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -246,7 +246,7 @@ a{
         margin-left:10px ;
     }
     .nav-link-list{
-        display: none;
+        /* display: none; */
     }
     .logo{
         margin-left: 10px;
