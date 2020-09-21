@@ -8,6 +8,8 @@ const work = document.getElementsByClassName("work");
 const port = document.getElementsByClassName("port");
 const con = document.getElementsByClassName("con");
 const contact = document.getElementsByClassName("contact");
+const toggle = document.getElementById("toggle");
+const nav = document.getElementById("nav");
 
 
 function required( field ,  error1, error2, regex, event){
@@ -34,23 +36,6 @@ function validation(e){
 
 form.addEventListener("submit", validation)
 
-con.addEventListener("onClick" ,contactt)
-function contactt(){
-    document.location(contact)
-  }
-//   con.onclick= myFunction() {
-//     location.replace(contact)
-//   }
-
-// function classToggle() {
-//     const navs = document.querySelectorAll('.Nav-bar')
-    
-//     navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-//   }
-  
-//   document.querySelector('.Navbar__Link-toggle')
-    // .addEventListener('click', classToggle);
-    $(document).ready(function(){
-        $("menu").click(function(){
-            $("nav-link-list").toggleClass(".active")
-        })})
+toggle.addEventListener("click", function(){
+    nav.classList.toggle("active")
+})
