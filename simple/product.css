@@ -9,8 +9,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 22px;
+    line-height: 27px;
     font-family: oswald PT sans serif;
 }
 /**********************************
@@ -45,68 +45,99 @@ header{
 .navbar-link li a:hover{
     color: white;
 }
+
 /**********************************
-  PAGE:SIGN UP
+  PAGE:PRODUCT
   ***********************************/
-.signup{
+  .product {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
 }
-.reg-account h1{
-    font-size: 50px;
-    line-height: 61px;
-    margin: 175px 50px 23px 50px;
-    color:rgb(255, 166, 95) ;
+.product-img{
+    border: 1px solid #000;
+    max-width: 469px;
+    margin: 50px 50px 0 50px;
 }
-.reg{
-    font-size: 30px;
-    line-height: 37px;
-    margin: 0 20px 26px 50px;
-    color: #000;
+.product img , .product-related img{
+    width: 100%;
 }
-.reg-sign{
-    font-size: 30px;
-    line-height: 37px;
-    margin: 0 30px 227px 50px;
+.product-del{
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-top: 14px;
+
 }
-/**************** sign up page form******************/
-.signup-form fieldset{
-    margin: 46px 74px 111px 0;
-    border-radius: 23px;
+.product-del h3{
+    font-size: 25px;
+    line-height: 30px;
 }
-.signup-form label{
-    font-size: 18px;
-    line-height: 22px;
-    margin-left: 41px;
+.product-del h4{
+    font-size: 22px;
+    line-height: 27px;
+    margin:20px 0;
 }
-.signup-form input{
-    width: 521px;
-    height: 50px;
-    border: 2px solid ;
-    border-radius: 10px;
-    margin: 0 45px 34px 41px;
+.product-del input{
+    max-width: 70px;
+    height: 37px;
+    padding-left: 5px;
 }
-.signup-input{
-    margin: 39px 0 15px 0;
-}
-#checkbox-signup{
-    width: 16px;
-}
-.signup-input button{
-    width: 196px;
-    height: 48px;
-    border-radius: 4px;
-    background-color: rgb(255, 166, 95);
-    color: #fff;
-    font-size: 18px;
-    line-height: 12px;
-    margin: 0 200px;
+.product-del button{
+    width: 170px;
+    height: 47px;
+    border-radius: 20px;
     border: none;
+    background-color: #f79521;
+    font-size: 22px;
+    line-height: 27px;
 }
+.description{
+    margin-left: 50px;
+}
+.description h3{
+    text-align:left;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 23px;
+}
+.description p{
+    text-align:left;
+    margin:8px 0 30px 0;
+    font-size: 20px;
+    line-height: 25px;
+}
+.related-product{
+    background-color: #ebebeb;
+}
+.related-product h3{
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 30px;
+}
+.product-related{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+.product-related a{
+    text-decoration: none;
+}
+.lap-1, .charger, .bag{
+    max-width: 399px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
 
 
+}
+.lap-1 h5, .charger h5, .bag h5 {
+    text-align: center;
+    color: #000;
+   
 
-
+}
 
 /**********************************
   FOOTER
@@ -147,7 +178,14 @@ footer{
     font-size:18px;
     line-height: 22px;
     margin-top: 9px;
-    color: rgb(255, 166, 95) ;;
+    color: #ffa65f ;;
+}
+.error{
+    color:rgb(209, 21, 21);
+}
+.error-message{
+    color:#fff;
+    font-size:15px;
 }
 footer p{
 text-align: center;
@@ -167,7 +205,6 @@ color: #fff;
 
 
 
-
 /**********************************
   RESPONSIVENESS
   ***********************************/
@@ -176,7 +213,7 @@ color: #fff;
 @media screen and ( max-width:1085px ){
 
     
-   /**********************************
+/**********************************
   HEADING
   ***********************************/
     header{
@@ -189,23 +226,40 @@ color: #fff;
     }
     
 /**********************************
-  PAGE: SIGN UP
+  PAGE:PRODUCT
   ***********************************/
-
-    .signup{ 
-    flex-direction: column;
-    
-}
-.reg-sign{
-    margin-bottom: 20px;
-}
-/**************** sign up page form******************/
-.signup-form fieldset{
-    margin: 2px 37px 50px 20px;
-    border-radius: 5px;
+.product-img{
+    margin: 10px;
 }
 
+.product-del button{
+    width: 130px;
+    font-size: 18px;
+    line-height: 20px;
 }
+.description h3, .description p{
+    font-size: 14px;
+    line-height: 18px;
+}
+.description p{
+    margin: 10px;
+}
+.product-del h3, .product-del h4{
+    font-size: 20px;
+    line-height: 24px;
+}
+.lap-1, .charger, .bag{
+    flex-basis: 250px;
+    margin: 20px;
+
+}
+.product-related{
+    justify-content: space-between;
+    margin-top: 20px;
+}
+}
+
+
 
 
 @media screen and ( max-width:600px ) {
@@ -231,54 +285,31 @@ color: #fff;
         margin-left: 10px;
     }
    /**********************************
-  PAGE: SIGN UP
-  ***********************************/
-    .signup{
-        display:flex ;
-        flex-direction: column;
+         PAGE:PRODUCT
+      ***********************************/
+
+    .product{
+        flex-wrap: wrap;
+        margin: 20px;
     }
-    .reg-account h1{
-        font-size: 25px;
-        line-height: 30px;
-        margin: 21px 89px 2px 89px;
-        text-align: center;
-    }
-    .reg, .reg-sign{
-        font-size: 18px;
-        line-height: 22px;
-        margin: 5px 42px;
-        text-align: center;
-    }
-    /**************** sign up page form******************/
-    .signup-form input{
-        width: 325px;
-        height: 25px;
-        border: 1px solid ;
-        border-radius: 5px;
-        margin: 0 45px 34px 41px;
-        padding-right: 5px;
-    }
-    .signup-form fieldset{
-        margin: 20px 15px 17px 21px ;
-        border-radius: 10px;
-    }
-    .signup-input button{
-        width: 70px;
-        height: 29px;
-        border-radius: 2px;
-        font-size: 14px;
-        line-height: 12px;
-        margin:0 124px 0 170px;
-    }
+    .product-del{
+        margin: 20px;
     
-   
-    #checkbox-signup{
-        width: 12px;
-        height: 15px;
-        margin-left: 2px;
     }
-    
-  
+    .description{
+        margin-left: 30px;
+    }
+    .product-related{
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+    .related-product h3 {
+        font-size: 20px;
+    }
+    .lap-1, .charger, .bag{
+        flex-basis: 399px;
+        margin: 10px;
+    }
      /**********************************
          FOOTER
       ***********************************/

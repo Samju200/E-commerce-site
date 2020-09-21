@@ -1,0 +1,76 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta charaset="utf-8">
+<title>Samju foundation</title>
+<!-- <link rel="stylesheet" href="normalize.css"> -->
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="responsive.css">
+<meta name="view point" content="width= device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+    <a href="index.html" id="logo">
+        <h1>SAMJU</h1>
+        <h2>FOUNDATION</h2>
+    </a>
+    <nav>
+        <ul >
+                <li> <a href="index.html"> Home</a></li>
+                <Li> <a href="about.html">About</a></li>
+                <li><a href="registration.html"class=" selected">Registration</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="wrapper">
+<Section >
+    <div class="form">
+    <form id="form">
+        <fieldset>
+  <legend> SCHOLARSHIP FORM </legend>
+  <input type="text" id="fullName" name="fullName" placeholder="Full Name">
+  <span class="error"></span><br>
+  <input type="emal" id="mail" placeholder="enter your email">
+  <span class="error"></span><br>
+  <input type="text" id="address" name="adress" placeholder="Home Adress">
+  <span class="error"></span><br>
+  <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+  <span class="error"></span><br>
+  <label for="gender" class="gender">Gender</label><br> 
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="others">
+  <label for="others">Others</label><br>
+
+
+  <label for=" Education"> Education Level</label>
+  <select id="Education " name="Education">
+  <option value="select">...select one....</option>
+  <option value="primary school">Primary School</option>
+  <option value="Secondary School">Secondary School</option>
+  <option value="Bachelor Degree">Bachelor Degree</option>
+  <option value="Master Degree">Master Degree</option>
+  <option value="others">Others</option>
+  </select><br><br>
+
+    <label>Reason for Scholarship</label><br>
+    <textarea name="message" id="message"> </textarea>
+    <span class="error"></span><br>
+    <input class="button" type="submit" value="submit" >
+        </fieldset>
+    </form>
+</div>
+</Section>
+
+<footer>
+    <a href="http//:twitter.com/samju200"> <img src="img/twitter-wrap.png" alt="twitter logo" class="social-icon"></a>
+    <a href="http//:facebook.com/samju100"><img src="img/facebook-wrap.png" alt="facebook logo" class="social-icon"></a>
+    <p>&copy 2019 samju </p>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</Html>
