@@ -180,12 +180,14 @@ footer{
     margin-top: 9px;
     color: #ffa65f ;;
 }
-.error{
-    color:rgb(209, 21, 21);
-}
 .error-message{
     color:#fff;
     font-size:15px;
+}
+.error{
+    color:rgb(209, 21, 21);
+    display: block;
+    font-size: 15px;
 }
 footer p{
 text-align: center;
