@@ -25,21 +25,24 @@ const rates = {
 
 let select = document.querySelectorAll("select");
 const input = document.querySelectorAll("input");
-let html = "";
 
 const countryCode = Object.keys(rates);
 
     window.addEventListener("DOMContentLoaded", function () {
     
       countryCode.map(code =>{ 
-        return html += `<option value = ${code}> ${code} </option>`;
-      })
-      for(let i = 0 ; i < select.length; i++){
-        select[i].innerHTML += html;
-    }
-    function convert(key,value){
-      input[key].value = input[value].value * rates[select[key].value] /rates[select[value].value];
-    }
+      let option1 = document.createElement("option");
+      let option2 = document.createElement("option"); 
+      option1.textContent = code; 
+      option1.value = code;
+      option2.textContent = code; 
+      option2.value = code; 
+      for(let j = 0; j < select.length; j++){
+        select[0].append(option1);
+        select[1].append(option2);
+        function convert(key,value){
+          input[key].value = input[value].value * rates[select[key].value] /rates[select[value].value];
+        }
     
         input[0].addEventListener('change',()=>{ convert(1,0);
         
@@ -53,5 +56,6 @@ const countryCode = Object.keys(rates);
         select[1].addEventListener('change',()=>{convert(0,1);
            
         })
-              
-    })
+      }
+    })    
+      })
