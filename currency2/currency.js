@@ -41,7 +41,7 @@ const countryCode = Object.keys(rates);
         select[0].append(option1);
         select[1].append(option2);
         function convert(key,value){
-          input[key].value = input[value].value * rates[select[key].value] /rates[select[value].value];
+          input[key].value = Number(input[value].value * rates[select[key].value] /rates[select[value].value]).toFixed(4);
         }
     
         input[0].addEventListener('change',()=>{ convert(1,0);

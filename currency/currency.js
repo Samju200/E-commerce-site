@@ -38,13 +38,13 @@ const countryCode = Object.keys(rates);
         select[i].innerHTML += html;
     }
     function convert(key,value){
-      input[key].value = input[value].value * rates[select[key].value] /rates[select[value].value];
+      input[key].value = Number(input[value].value * rates[select[key].value] /rates[select[value].value]).toFixed(4);
     }
     
-        input[0].addEventListener('change',()=>{ convert(1,0);
+        input[0].addEventListener('input',()=>{ convert(1,0);
         
         })
-        input[1].addEventListener('change',()=>{convert(0,1);
+        input[1].addEventListener('input',()=>{convert(0,1);
             
         })
         select[0].addEventListener('change',()=>{convert(1,0);
