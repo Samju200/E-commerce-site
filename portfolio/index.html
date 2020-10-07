@@ -10,30 +10,70 @@
 </head>
 <body>
     <header>
-        <div class="header">
-            <div class="logo">
-            <h1> <a href="index.html"> SAMJU</a></h1>
+        <nav>
+            <div class="nav-center">
+              <!-- nav header -->
+              <div class="nav-header">
+                <h1 class="logo"><a href="">SAMJU</a></h1>
+                <button class="nav-toggle">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </div>
+              <!-- links -->
+              <ul class="links">
+                <li>
+                  <a href="index.html"  class="nav-links">Home</a>
+                </li>
+                <li>
+                  <a href="#portfolio" class="nav-links">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#services" class="nav-links">Services</a>
+                </li>
+                <li>
+                  <a href="#contact" class="nav-links">contact</a>
+                </li>
+        
+              </ul>
+              <!-- social media -->
+              <ul class="social-icons">
+                <li>
+                  <a href="https://www.facebook.com/samju100">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com/samju200">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="nav-link">
-                <nav class="nav-bar">
-                    <div class="toggle" id="toggle">
-                        <i class="fas fa-bars"></i>
-                      </div>
-                    <ul class="nav-link-list" id="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#work" class="port">Portfolio</a></li>
-                        <li><a href="#contact" class="con">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="word">
-            <h1> Hello, <br> I'm <span class="my-name">Juwon Adeyemi.</span> 
-               <br> I'm a front-end web developer.</h1>
-        </div>
+          </nav>
     </header>
     <section>
-        <div class="work" id="work">
+      <div id="container">
+        <div class="slide-image">
+          <img src="slideName/slide_1.jpg" class="slide-img" alt="">
+          <div class="word slide-p">
+            <h1> Hello, <br> I'm <span class="my-name">Juwon Adeyemi.</span> 
+               <br> I create beautiful and dynamic websites.</h1>
+                 <button class="slide-btn">Get started</button>
+               
+          </div>
+        </div>
+        
+        <div class="work" id="portfolio">
             <h1> Portfolio</h1>
             <div class="portfolio-link">
                     <div class="foundation">
@@ -93,7 +133,7 @@
                 <button type="submit">SUBMIT</button><br>
             </form>
         </div>
-        
+      </div>
     </section>
     <footer>
         <div>

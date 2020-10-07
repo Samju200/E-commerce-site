@@ -4,13 +4,54 @@ const email = document.getElementById("email");
 const message = document.getElementById("message");
 const nameRegex =  /^(a-z|A-Z|0-9)*[^#$%^&*()']*$/;
 const emailRegex = "/^+([]?+)*@+([-]?+)*({2,6})+$/";
-const work = document.getElementsByClassName("work");
-const port = document.getElementsByClassName("port");
-const con = document.getElementsByClassName("con");
-const contact = document.getElementsByClassName("contact");
-const toggle = document.getElementById("toggle");
-const nav = document.getElementById("nav");
+const navToggle = document.querySelector(".nav-toggle");
+const nav = document.querySelector("nav");
+const links = document.querySelector(".links");
+const navLinks = document.querySelectorAll(".nav-links");
+const slideImg = document.querySelector(".slide-img")
 
+navToggle.addEventListener("click", function () {
+    links.classList.toggle("show-links");
+    if(links.classList.contains("show-links")){
+      this.style.transform = "rotate(90deg)";
+      this.style.backgroundColor = "brown";
+    } else {
+      this.style.transform = "rotate(180deg)";
+      this.style.backgroundColor = "transparent";
+    }
+})
+
+window.addEventListener("scroll", function(){
+    const navHeight = nav.getBoundingClientRect().height;
+    const scrollHeight = window.pageYOffset;
+    if(scrollHeight > navHeight + 100){
+        nav.classList.add("fixed-nav");
+    } else {
+        nav.classList.remove("fixed-nav");
+    }
+})
+
+Array.from(navLinks).forEach(function(link){
+    link.addEventListener("click", function(e){
+        e.preventDefault();
+        const navHeight = nav.getBoundingClientRect().height;
+        const targetAttr = e.currentTarget.getAttribute("href").slice(1);
+        const itemTarget = document.getElementById(targetAttr);
+        let position = itemTarget.offsetTop - navHeight;
+        if(!nav.classList.contains("fixed-nav")){
+            position = position - navHeight;
+        }
+        if(navHeight > 100){
+            position = position + 450;
+        }
+
+        window.scrollTo({
+            left: 0,
+            top: position
+        })
+    })
+
+})
 
 function required( field ,  error1, error2, regex, event){
     if(field.value === ""){
@@ -36,6 +77,7 @@ function validation(e){
 
 form.addEventListener("submit", validation)
 
-toggle.addEventListener("click", function(){
-    nav.classList.toggle("active")
-})
+setInterval(function(){
+    let random = Math.floor((Math.random() * 7) + 1);
+    slideImg.src = "slideName/slide_" + random + ".jpg";
+}, 10000)
