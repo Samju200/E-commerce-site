@@ -117,6 +117,11 @@ nav {
 .container1{
   margin: auto;
 }
+/*
+=============== 
+Section
+===============
+*/
 section {
     background-color: rgba(23, 23, 143, 0.8);
     height: auto;
@@ -136,7 +141,7 @@ section {
     text-transform: uppercase;
     text-align: center;
     color: #080855;
-    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow:var(--text-shadow) ;
 }
 
@@ -183,7 +188,11 @@ select {
 .currency {
     margin: 1em 0;
 }
-
+/*
+=============== 
+Footer
+===============
+*/
 .copy {
     text-align: center;
     color: var(--clr-black);
@@ -202,7 +211,20 @@ select {
     color: var(--clr-black);
 }
 
+/*
+================================ 
+Screen Resolution for big screen
+================================
+*/
+
 @media screen and (min-width: 800px) {
+ 
+ /*
+=============== 
+Navbar
+===============
+*/
+ 
   .nav-center {
     max-width: 1170px;
     margin: 0 auto;
@@ -240,6 +262,11 @@ select {
   .social-icons a:hover {
     color: hsl(205, 89%, 70%);;
 }
+/*
+=============== 
+Section
+===============
+*/
   .header{
       font-size: 2.5rem;
 }
@@ -268,4 +295,3 @@ input {
     font-size: 20px;
 }
 }
-

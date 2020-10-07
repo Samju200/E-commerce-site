@@ -17,13 +17,13 @@ navToggle.addEventListener("click", function () {
 });
 
 const rates = {
-    "NGN-NigerianNaira": 1.00,
-    "ZMW-ZambianKwacha": 0.052,
-    "GBP-PoundSterling": 0.0021,
-    "USD-USDollars": 0.0026,
+    "NGN-Nigerian-Naira": 1.00,
+    "ZMW-Zambian-Kwacha": 0.052,
+    "GBP-Pound-Sterling": 0.0021,
+    "USD-US-Dollars": 0.0026,
   }
 
-let select = document.querySelectorAll("select");
+const select = document.querySelectorAll("select");
 const input = document.querySelectorAll("input");
 let html = "";
 

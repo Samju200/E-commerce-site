@@ -17,13 +17,13 @@ navToggle.addEventListener("click", function () {
 });
 
 const rates = {
-    "NGN-NigerianNaira": 1.00,
-    "ZMW-ZambianKwacha": 0.052,
-    "GBP-PoundSterling": 0.0021,
-    "USD-USDollars": 0.0026,
+    "NGN-Nigerian-Naira": 1.00,
+    "ZMW-Zambian-Kwacha": 0.052,
+    "GBP-Pound-Sterling": 0.0021,
+    "USD-US-Dollars": 0.0026,
   }
 
-let select = document.querySelectorAll("select");
+const select = document.querySelectorAll("select");
 const input = document.querySelectorAll("input");
 
 const countryCode = Object.keys(rates);
@@ -44,10 +44,10 @@ const countryCode = Object.keys(rates);
           input[key].value = Number(input[value].value * rates[select[key].value] /rates[select[value].value]).toFixed(4);
         }
     
-        input[0].addEventListener('change',()=>{ convert(1,0);
+        input[0].addEventListener('input',()=>{ convert(1,0);
         
         })
-        input[1].addEventListener('change',()=>{convert(0,1);
+        input[1].addEventListener('input',()=>{convert(0,1);
             
         })
         select[0].addEventListener('change',()=>{convert(1,0);
