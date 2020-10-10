@@ -8,8 +8,10 @@ const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector("nav");
 const links = document.querySelector(".links");
 const navLinks = document.querySelectorAll(".nav-links");
-const slideImg = document.querySelector(".slide-img")
+const slideImg = document.querySelector(".slide-img");
+const year = document.getElementById("year");
 
+year.innerHTML = new Date().getFullYear();
 navToggle.addEventListener("click", function () {
     links.classList.toggle("show-links");
     if(links.classList.contains("show-links")){
