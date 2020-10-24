@@ -317,6 +317,7 @@ textarea{
 }
 .footer{
     display: flex;
+    flex-wrap: wrap;
     margin: 20px 10px;
     justify-content: space-between;
 }

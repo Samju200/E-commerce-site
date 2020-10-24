@@ -11,32 +11,28 @@ header{
   background:#fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 40px;
-border-top: 5px solid black;
-font-size: 20px;
+  border-top: 5px solid black;
+  font-size: 20px;
 }
-header a{
+a{
   text-decoration: none;
   color: black;
 }
-header div.container {
+ul, li{
+  list-style: none;
+}
+.container {
   display:flex ;
   align-items: center;
   justify-content: space-between;
   width: 95%;
   margin: auto;
 }
-header div.container nav.navbar{
+.container .navbar{
   display: flex;
   align-items: center;
 }
-.navbar ul{
-  list-style: none;
-  display: inline-block;
-  margin-right: 20px;
-}
 .navbar li{
-  
-    list-style: none;
     display: inline-block;
     margin-right: 20px;
   }
@@ -50,8 +46,9 @@ header div.container nav.navbar{
     display: none;
     position: absolute;
     right: 0;
+    left: 0;
     background-color: white;
-    width: 100%;
+    width: 80%;
     z-index: 2;
 
   }
@@ -63,11 +60,11 @@ header div.container nav.navbar{
     float: left;
     width: 15%;
     margin: 2.5%;
-    background-color: #fff;
+    background-color: rgb(141, 135, 135);
     color: black; 
     margin: 8px;
     padding: 0;
-    height: 200px;
+    height: auto;
     box-sizing: border-box;
   }
   .subnav-content li h3 {
@@ -78,17 +75,12 @@ header div.container nav.navbar{
     margin: 0;
   padding: 5%;
   font-size: 0.75em;
-  color: #fff;
+  color:#000;
   }
   .nav-list a{
     margin: 5px;
   }
 
-    
-    .sub-list img{
-      width: 20px;
-      background-color: #fff;
-    }
     .sub-list:hover{
       background-color: #fff;
     }
@@ -120,16 +112,25 @@ header div.container nav.navbar{
  header div.container div.button a:first-child{
   margin-right: 20px;
  }
-
+.fa{
+  color: #000;
+}
 .button a:first-child {
 margin-right: 20px;
 }
-.button a:nth-child(3){
-  background-color: rgb( 189, 22, 64);
-  padding: 7px 14px;
-  border-radius: 7px;
-}
-
+.button a:nth-child(2):hover {
+  color: #e94c89;
+  }
+  .button a:nth-child(3){
+    background-color: rgb( 189, 22, 64);
+    padding: 7px 14px;
+    border-radius: 7px;
+  }
+  .button a:nth-child(3):hover{
+    background-color: rgb(228, 222, 224);
+    padding: 7px 14px;
+    border-radius: 7px;
+  }
 .sub-header{
   background-color:white;
 display: flex;
@@ -237,8 +238,6 @@ footer{
   width: 100%;
   background-color:rgba(248, 245, 245, 0.85);
   display: block;
-  /* position: relative; */
-  /* background:red; */
 }
 .inner-footer{
   width: 90%;

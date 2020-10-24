@@ -7,20 +7,32 @@ const emailRegex = "/^+([]?+)*@+([-]?+)*({2,6})+$/";
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector("nav");
 const links = document.querySelector(".links");
+const listLinks = document.querySelector(".list-links");
 const navLinks = document.querySelectorAll(".nav-links");
 const slideImg = document.querySelector(".slide-img");
 const year = document.getElementById("year");
 
 year.innerHTML = new Date().getFullYear();
 navToggle.addEventListener("click", function () {
-    links.classList.toggle("show-links");
-    if(links.classList.contains("show-links")){
-      this.style.transform = "rotate(90deg)";
+   const listLinksHeight = listLinks.getBoundingClientRect().height;
+   const linksHeight = links.getBoundingClientRect().height;
+   if(listLinksHeight === 0){
+       listLinks.style.height = `${linksHeight}px`;
+       this.style.transform = "rotate(90deg)";
       this.style.backgroundColor = "brown";
-    } else {
-      this.style.transform = "rotate(180deg)";
-      this.style.backgroundColor = "transparent";
-    }
+   }else{
+       listLinks.style.height = 0;
+       this.style.transform = "rotate(180deg)";
+      this.style.backgroundColor = "transparent"
+   }
+    // listLinks.classList.toggle("show-links");
+    // if(listLinks.classList.contains("show-links")){
+    //   this.style.transform = "rotate(90deg)";
+    //   this.style.backgroundColor = "brown";
+    // } else {
+    //   this.style.transform = "rotate(180deg)";
+    //   this.style.backgroundColor = "transparent";
+    // }
 })
 
 window.addEventListener("scroll", function(){

@@ -29,17 +29,24 @@ const input = document.querySelectorAll("input");
 const countryCode = Object.keys(rates);
 
     window.addEventListener("DOMContentLoaded", function () {
-    
-      countryCode.map(code =>{ 
-      let option1 = document.createElement("option");
-      let option2 = document.createElement("option"); 
-      option1.textContent = code; 
-      option1.value = code;
-      option2.textContent = code; 
-      option2.value = code; 
-      for(let j = 0; j < select.length; j++){
-        select[0].append(option1);
-        select[1].append(option2);
+      displayCountryCode()
+      convert()
+    }) 
+
+      function displayCountryCode(){
+        countryCode.map(code =>{ 
+          let option1 = document.createElement("option");
+          let option2 = document.createElement("option"); 
+          option1.textContent = code; 
+          option1.value = code;
+          option2.textContent = code; 
+          option2.value = code; 
+            select[0].append(option1);
+            select[1].append(option2);
+          })
+      }
+  
+      
         function convert(key,value){
           input[key].value = Number(input[value].value * rates[select[key].value] /rates[select[value].value]).toFixed(4);
         }
@@ -56,6 +63,5 @@ const countryCode = Object.keys(rates);
         select[1].addEventListener('change',()=>{convert(0,1);
            
         })
-      }
-    })    
-      })
+      
+      

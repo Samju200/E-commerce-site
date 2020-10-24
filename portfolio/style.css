@@ -101,7 +101,7 @@ nav {
   .social-icons {
     display: none;
   }
-  .links {
+  .list-links {
     height: 0;
     overflow: hidden;
     transition: var(--transition);
@@ -192,7 +192,16 @@ nav {
 .port-btn i{
   color: #efefef;
 }
-
+.portfolio-link div a i{
+  width: 40px;
+}
+.fa-github{
+  color: var(--clr-white);
+  text-align: right;
+}
+.fa-github:hover{
+  color: aqua;
+}
 .portfolio-link div:hover {
   background: #382121;
     transition: 1000ms cubic-bezier(0.77, 0, 0.175, 1); 
@@ -200,15 +209,15 @@ nav {
   .portfolio-link div:hover img{
     opacity: 0.7;
   }
-.lan-list{
+.skill-list{
   text-align: center;
   text-transform: uppercase;
   font-size: 20px;
 }
-.lan-list li:hover{
+.skill-list li:hover{
   text-shadow: var(--text-shadow);
 }
-.percentage{
+/* .percentage{
   border: 1px solid #000;
   margin-left: 20px;
   padding-right: 300px; 
@@ -225,7 +234,7 @@ nav {
   width: 80%;
   background-color: rgba(240, 128, 128, 0.946);
 
-}
+} */
 .contact h1 {
     color: #fff;
     text-align: center;
@@ -245,6 +254,10 @@ nav {
     background: #382121;
     color: #fff;
 }
+ .contact textarea:focus, .contact input:focus{
+   background-color:var(--clr-white);
+   color:var(--clr-black);
+ } 
 .contact textarea{
     width: 350px;
     height: 200px;
@@ -320,7 +333,6 @@ nav {
        display: none;
    }
      .links {
-       height: auto;
        display: flex;
    }
      .links a {
@@ -343,6 +355,9 @@ nav {
     bottom: 0;
     transition: 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
   
+  }
+  .list-links{
+    height: auto;
   }
   .links a:hover::after{
     width: 100%;
