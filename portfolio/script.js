@@ -95,3 +95,4 @@ setInterval(function(){
     let random = Math.floor((Math.random() * 7) + 1);
     slideImg.src = "slideName/slide_" + random + ".jpg";
 }, 10000)
+l;
