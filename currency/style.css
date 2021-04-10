@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
 
 /*
 =============== 
@@ -7,11 +7,11 @@ Variables
 */
 
 :root {
-    --clr-white: #fff;
+  --clr-white: #fff;
   --clr-black: #222;
-  --clr-blue:rgb(44, 44, 211);
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+  --clr-blue: rgb(44, 44, 211);
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
@@ -19,7 +19,8 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
-  --text-shadow:2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  --text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
+    1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 /*
 =============== 
@@ -40,7 +41,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color:var(--clr-white);
+  color: var(--clr-white);
   line-height: 1.5;
   font-size: 0.875rem;
   height: 100vh;
@@ -51,7 +52,6 @@ ul {
 a {
   text-decoration: none;
 }
-
 
 /*
 =============== 
@@ -83,10 +83,10 @@ nav {
 
 .logo a {
   height: 40px;
-  color:var(--clr-white);
+  color: var(--clr-white);
 }
 .links a {
-  color:var(--clr-white);
+  color: var(--clr-white);
   font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -96,7 +96,7 @@ nav {
 }
 .links a:hover {
   background: hsl(210, 31%, 80%);
-  color: hsl(205, 89%, 70%);;
+  color: hsl(205, 89%, 70%);
   padding-left: 1.5rem;
 }
 .social-icons {
@@ -110,11 +110,11 @@ nav {
 .show-links {
   height: 10rem;
 }
-.container{
+.container {
   display: flex;
   height: 80%;
 }
-.container1{
+.container1 {
   margin: auto;
 }
 /*
@@ -123,37 +123,37 @@ Section
 ===============
 */
 section {
-    background-color: rgba(23, 23, 143, 0.8);
-    height: auto;
-    width: 70vw;
-    margin: 20px auto;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
-    padding: 30px;
-    box-sizing: border-box;
-    font-weight: 800;
+  background-color: rgba(23, 23, 143, 0.8);
+  height: auto;
+  width: 70vw;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  padding: 30px;
+  box-sizing: border-box;
+  font-weight: 800;
 }
 
 .header {
-    padding-top: 20px;
-    font-size: 4vw;
-    text-transform: uppercase;
-    text-align: center;
-    color: #080855;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-shadow:var(--text-shadow) ;
+  padding-top: 20px;
+  font-size: 4vw;
+  text-transform: uppercase;
+  text-align: center;
+  color: #080855;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: var(--text-shadow);
 }
 
 marquee {
-    width: 85%;
-    padding: 10px 0;
-    letter-spacing: 2px;
-    font-size: 20px;
-    font-weight: 900;
-    text-shadow:var(--text-shadow); 
-    text-transform: capitalize;
-    color: rgb(255, 145, 0);
+  width: 85%;
+  padding: 10px 0;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 900;
+  text-shadow: var(--text-shadow);
+  text-transform: capitalize;
+  color: rgb(255, 145, 0);
 }
 
 .flag img {
@@ -161,32 +161,32 @@ marquee {
 }
 
 input {
-    width: 90%;
-    padding: 10px;
-    border-radius: 5px;
-    outline-color: white;
-    border-color: white;
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  outline-color: white;
+  border-color: white;
 }
 
 input:focus {
-    outline-color: black;
+  outline-color: black;
 }
 
 .arrow {
-    font-size: 15px;
-    color: rgb(255, 187, 0);
+  font-size: 15px;
+  color: rgb(255, 187, 0);
 }
 
 select {
-    display: block;
-    margin: 20px auto 0 auto;
-    padding: 10px;
-    border-radius: 5px;
-    width: 70%;
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  width: 70%;
 }
 
 .currency {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 /*
 =============== 
@@ -194,21 +194,21 @@ Footer
 ===============
 */
 .copy {
-    text-align: center;
-    color: var(--clr-black);
+  text-align: center;
+  color: var(--clr-black);
 }
 
 .footer-icons {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100px;
-    margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  margin: 0 auto;
 }
 
 .footer-icons li a {
-    color: var(--clr-black);
+  color: var(--clr-black);
 }
 
 /*
@@ -218,13 +218,12 @@ Screen Resolution for big screen
 */
 
 @media screen and (min-width: 800px) {
- 
- /*
+  /*
 =============== 
 Navbar
 ===============
 */
- 
+
   .nav-center {
     max-width: 1170px;
     margin: 0 auto;
@@ -232,66 +231,66 @@ Navbar
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-}
+  }
   .nav-header {
     padding: 0;
-}
+  }
   .nav-toggle {
     display: none;
-}
+  }
   .links {
     height: auto;
     display: flex;
-}
+  }
   .links a {
     padding: 0;
     margin: 0 0.5rem;
-}
+  }
   .links a:hover {
     padding: 0;
     background: transparent;
-}
+  }
   .social-icons {
     display: flex;
-}
+  }
   .social-icons a {
     margin: 0 0.5rem;
-    color:var(--clr-white);
+    color: var(--clr-white);
     transition: var(--transition);
-}
+  }
   .social-icons a:hover {
-    color: hsl(205, 89%, 70%);;
-}
-/*
+    color: hsl(205, 89%, 70%);
+  }
+  /*
 =============== 
 Section
 ===============
 */
-  .header{
-      font-size: 2.5rem;
-}
+  .header {
+    font-size: 2.5rem;
+  }
   .currency {
     margin: 2em 0;
-}
+  }
   select {
     display: inline-block;
     margin: 0 auto;
     width: fit-content;
-}
+  }
 
-marquee {
+  marquee {
     width: 70%;
-}
+  }
 
-.arrow {
+  .arrow {
     font-size: 25px;
-}
+  }
 
-input {
+  input {
     width: 40%;
-}
-.copy{
+  }
+  .copy {
     font-weight: bold;
     font-size: 20px;
-}
+  }
 }
